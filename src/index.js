@@ -1,4 +1,8 @@
 const { app, BrowserWindow } = require('electron');
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+require("@electron/remote")
 const path = require('path');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -14,6 +18,7 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js'),
+      enable
     },
   });
 

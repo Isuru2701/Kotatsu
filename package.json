@@ -12,13 +12,12 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": {
-    "name": "Isuru Yahampath",
-    "email": "isuruyahampath1@gmail.com"
-  },
+  "author": "Isuru Yahampath <isuruyahampath1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.2.0",

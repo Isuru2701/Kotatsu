@@ -1,8 +1,4 @@
 const { app, BrowserWindow } = require('electron');
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-require("@electron/remote")
 const path = require('path');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -24,9 +20,6 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
-
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
